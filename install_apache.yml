@@ -1,0 +1,9 @@
+---
+
+- hosts: all #ap dung cho tat ca server
+  become: true #chay quyen sudo cho server
+  tasks:
+
+  - name: install apache #dat ten cho playbook
+    apt:
+      name: apache2 #ten package can cai dat
